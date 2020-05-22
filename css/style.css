@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 body {
     color: black;
@@ -93,13 +94,14 @@ ul {
 
 li.outer {
     margin-top: 24px;
-    font-size: 1.25em;
+    margin-bottom: 6px;
+    font-size: 1.2em;
     color: rgb(5, 233, 138)
 }
 
 li {
     margin-bottom: 12px;
-    font-size: 1em;
+    font-size: .9em;
     color: #FFB;
 }
 
@@ -119,11 +121,17 @@ li {
     }
 }
 
+.atari {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1rem;
+}
+
 .crazy1 {
     animation: goinglarge .6s linear infinite;
     text-align: center;
     vertical-align: middle;
     line-height: 3rem;
+    font-family: 'Press Start 2P', cursive;
 }
 
 .crazy2 {
@@ -131,6 +139,7 @@ li {
     text-align: left;
     vertical-align: middle;
     line-height: 3rem;
+    font-family: 'Press Start 2P', cursive;
 }
 
 .crazy3 {
@@ -138,6 +147,7 @@ li {
     text-align: right;
     vertical-align: middle;
     line-height: 3rem;
+    font-family: 'Press Start 2P', cursive;
 }
 
 @keyframes goinglarge {
