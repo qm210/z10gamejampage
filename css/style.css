@@ -1,22 +1,32 @@
-@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 body {
     color: black;
     background: radial-gradient(circle at center, #222, black);
 }
 
+.row {
+    margin-bottom: 50px;
+}
+
 .logo {
     display: float;
     position: relative;
     top: -30px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    z-index: 2;
 }
 
 .text-virtual {
     display: float;
     position: relative;
-    width: 300px;
+    width: 400px;
     top: -24px;
-    left: 50px;
+    left: 25px;
+    z-index: 2;
 }
 
 .text-gamejam {
@@ -24,25 +34,114 @@ body {
     position: absolute;
     top: 90px;
     left: 166px;
+    z-index: 1;
 }
 
 .box {
     border: 5px solid black;
-    background-color: rgba(32, 0, 32, 0.1);
-    padding: 20px;
+    background-color: rgba(32, 0, 32, 0.25);
+    padding: 30px;
     -webkit-box-shadow: 15px 15px 8px 0px rgba(0,0,0,0.6);
     -moz-box-shadow: 15px 15px 8px 0px rgba(0,0,0,0.6);
     box-shadow: 15px 15px 8px 0px rgba(0,0,0,0.6);
 }
 
-.atari {
-    font-family: 'press start 2p';
-    font-size: 1.2rem;
-    color: rgba(255, 255, 255, 0.9);
+.retro {
+    font-family: 'VT323', monospace;
+    font-size: 2.2rem;
+    line-height: 1.8rem;
+    color: #EED;
     text-shadow: 0 .1em 0 #000;
 }
 
-.atari a {
+.larger {
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+}
+
+.smaller {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+}
+
+.retro a {
     color: #FFB;
     text-decoration: underline;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.backlink {
+    text-align: right;
+}
+
+@media only screen and (min-width: 600px) {
+    .backlink {
+        margin-bottom: 16px;
+        color: blue;
+    }
+}
+
+ul {
+    list-style: square outside none;
+    margin-top: 6px;
+}
+
+li.outer {
+    margin-top: 24px;
+    font-size: 1.25em;
+    color: rgb(5, 233, 138)
+}
+
+li {
+    margin-bottom: 12px;
+    font-size: 1em;
+    color: #FFB;
+}
+
+.superimportant {
+    animation: glowy 10s linear infinite;
+  }
+
+@keyframes glowy {
+    0% {
+        color: red;
+    }
+    50% {
+        color: #FFDD88;
+    }
+    100% {
+        color: red;
+    }
+}
+
+.crazy1 {
+    animation: goinglarge .6s linear infinite;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 3rem;
+}
+
+.crazy2 {
+    animation: goinglarge .421s linear infinite;
+    text-align: left;
+    vertical-align: middle;
+    line-height: 3rem;
+}
+
+.crazy3 {
+    animation: goinglarge 1.31s linear infinite;
+    text-align: right;
+    vertical-align: middle;
+    line-height: 3rem;
+}
+
+@keyframes goinglarge {
+    50% {
+        font-size: 3rem;
+    }
 }
