@@ -1,0 +1,61 @@
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+
+body {
+    color: black;
+    background: radial-gradient(circle at center, #222, black);
+}
+
+.logo {
+    display: float;
+    position: relative;
+    top: -30px;
+}
+
+.text-virtual {
+    display: float;
+    position: relative;
+    width: 300px;
+    top: -24px;
+    left: 50px;
+}
+
+.text-gamejam {
+    display: float;
+    position: absolute;
+    top: 90px;
+    left: 166px;
+}
+
+.box {
+    border: 5px solid black;
+    background-color: rgba(32, 0, 32, 0.1);
+    padding: 20px;
+    -webkit-box-shadow: 15px 15px 8px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: 15px 15px 8px 0px rgba(0,0,0,0.6);
+    box-shadow: 15px 15px 8px 0px rgba(0,0,0,0.6);
+}
+
+/*
+.row {
+    background-color: #FF9232;
+    height: 4.7rem;
+}
+
+[class*="col-"] {
+    background-color: #00C3AA;
+    height: 4.2rem;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+}
+*/
+
+.atari {
+    font-family: 'press start 2p';
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 .1em 0 #000;
+}
+
+.atari a {
+    color: #FFB;
+    text-decoration: underline;
+}
